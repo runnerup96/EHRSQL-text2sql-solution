@@ -6,10 +6,11 @@
 2. The final solution system is presented here with comments `ehrsql_solution/final_system.py`
 3. To run the final solution:
    1. Install `scikit-learn==0.24.2, pandas==1.3.4, nltk==3.6.5`, python version 3.9.7
-   2. Run `python final_system.py --db_path path_to_mimic_iv_sqligth`
-   3. In the end we verify that presented solution is consistent with leaderboard submission
-
-    
+   2. Right now the schema linking result is prepared, but to generate it again we need to run it with
+   `python schema_match_algorithm.py --path_to_mimic path_to_mimic_folder_with_csv_files`
+   3. Run `python final_system.py --db_path path_to_mimic_iv_sqligth`
+   4. In the end of `final_system.py` we verify that presented solution is consistent with leaderboard submission
+4. To train and infer T5-3b model use `training_code/run_t5_training.sh` and `training_code/eval_infer_t5.sh` scripts.
 
 
 ## [Overview](https://sites.google.com/view/ehrsql-2024)
