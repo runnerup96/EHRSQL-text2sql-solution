@@ -73,6 +73,7 @@ class Build_MIMIC_IV(Sampler):
                 print(f"time_span: {self.time_span}")
                 print(f"current_time: {self.current_time}")
 
+        print(os.path.join(self.out_dir, db_name + ".sqlite"))
         self.conn = sqlite3.connect(os.path.join(self.out_dir, db_name + ".sqlite"))
         self.cur = self.conn.cursor()
         with open(os.path.join(self.out_dir, db_name + ".sql"), "r") as sql_file:

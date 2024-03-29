@@ -1,5 +1,16 @@
 # Reliable Text-to-SQL on Electronic Health Records - Clinical NLP Workshop @ NAACL 2024
 
+### Our solution
+
+1. We trained t5-3b model with `training_code/run_t5_training.sh` script on only text-to-SQL pairs.
+2. The final solution system is presented here with comments `ehrsql_solution/final_system.py`
+3. To run the final solution:
+   1. Install `scikit-learn==0.24.2, pandas==1.3.4, nltk==3.6.5`, python version 3.9.7
+   2. Run `python final_system.py --db_path path_to_mimic_iv_sqligth`
+   3. In the end we verify that presented solution is consistent with leaderboard submission
+
+    
+
 
 ## [Overview](https://sites.google.com/view/ehrsql-2024)
 

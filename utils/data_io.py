@@ -9,4 +9,4 @@ def read_json(path):
 def write_json(path, file):
     os.makedirs(os.path.split(path)[0], exist_ok=True)
     with open(path, 'w+') as f:
-        json.dump(file, f)
+        json.dump(file, f, indent=4)
